@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34003.232
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serilog.Sinks.WriteToEntityFrameworkCore", "Serilog.Sinks.WriteToEntityFrameworkCore\Serilog.Sinks.WriteToEntityFrameworkCore.csproj", "{B70D1A72-CEA8-479C-BE42-DA42B90E93FA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B70D1A72-CEA8-479C-BE42-DA42B90E93FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B70D1A72-CEA8-479C-BE42-DA42B90E93FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B70D1A72-CEA8-479C-BE42-DA42B90E93FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B70D1A72-CEA8-479C-BE42-DA42B90E93FA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {53D1D619-D4BA-40C0-A0A2-173C93F1A1FD}
+	EndGlobalSection
+EndGlobal
