@@ -14,15 +14,15 @@ namespace Serilog.Sinks.WriteToEntityFrameworkCore
 {
     public class WriteToEntityFrameworkCore : ILogEventSink
     {
-        public readonly DbContext db;
+        public readonly Func<DbContext> dbContextProvider;
         private readonly IFormatProvider _formatProvider;
         private readonly JsonFormatter _jsonFormatter;
-        private readonly static object _look_object; 
+        private readonly static object _look_object = new object(); 
         public WriteToEntityFrameworkCore(Func<DbContext> DbContextProvider, IFormatProvider formatProvider)
         {
             this._formatProvider = formatProvider;
             this._jsonFormatter = new JsonFormatter(formatProvider: formatProvider);
-            db = DbContextProvider.Invoke();
+            dbContextProvider = DbContextProvider;
         }
 
         void ILogEventSink.Emit(LogEvent logEvent)
@@ -35,6 +35,7 @@ namespace Serilog.Sinks.WriteToEntityFrameworkCore
                 }
                 try
                 {
+                    DbContext db = dbContextProvider.Invoke();
                     string json = this.ConvertLogEventToJson(logEvent);
                     JsonNode rootNode = JsonNode.Parse(json);
                     var properties = rootNode["Properties"];
@@ -46,12 +47,12 @@ namespace Serilog.Sinks.WriteToEntityFrameworkCore
                         Message = this._formatProvider == null ? null : logEvent.RenderMessage(this._formatProvider),
                         MessageTemplate = logEvent.MessageTemplate?.ToString(),
                         TimeStamp = logEvent.Timestamp.DateTime.ToUniversalTime(),
-                        EventId = (int?)properties["EventId"]?["Id"],
-                        SourceContext = (string)properties["SourceContext"],
-                        ActionId = (string)properties["ActionId"],
-                        ActionName = (string)properties["ActionName"],
-                        RequestId = (string)properties["RequestId"],
-                        RequestPath = (string)properties["RequestPath"]
+                        EventId = (int?)properties?["EventId"]?["Id"],
+                        SourceContext = (string?)properties?["SourceContext"] ?? string.Empty,
+                        ActionId = (string?)properties?["ActionId"] ?? string.Empty,
+                        ActionName = (string?)properties?["ActionName"] ?? string.Empty,
+                        RequestId = (string?)properties?["RequestId"] ?? string.Empty,
+                        RequestPath = (string?)properties?["RequestPath"] ?? string.Empty
                     };
                     if (db is not null)
                     {

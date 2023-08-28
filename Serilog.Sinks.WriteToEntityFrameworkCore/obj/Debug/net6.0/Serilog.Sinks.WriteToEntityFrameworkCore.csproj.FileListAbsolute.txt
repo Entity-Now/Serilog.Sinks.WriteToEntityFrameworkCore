@@ -1,0 +1,12 @@
+D:\Language\Csharp\Serilog.Sinks.WriteToEntityFrameworkCore\Serilog.Sinks.WriteToEntityFrameworkCore\bin\Debug\net6.0\Serilog.Sinks.WriteToEntityFrameworkCore.deps.json
+D:\Language\Csharp\Serilog.Sinks.WriteToEntityFrameworkCore\Serilog.Sinks.WriteToEntityFrameworkCore\bin\Debug\net6.0\Serilog.Sinks.WriteToEntityFrameworkCore.dll
+D:\Language\Csharp\Serilog.Sinks.WriteToEntityFrameworkCore\Serilog.Sinks.WriteToEntityFrameworkCore\bin\Debug\net6.0\Serilog.Sinks.WriteToEntityFrameworkCore.pdb
+D:\Language\Csharp\Serilog.Sinks.WriteToEntityFrameworkCore\Serilog.Sinks.WriteToEntityFrameworkCore\obj\Debug\net6.0\Serilog.Sinks.WriteToEntityFrameworkCore.csproj.AssemblyReference.cache
+D:\Language\Csharp\Serilog.Sinks.WriteToEntityFrameworkCore\Serilog.Sinks.WriteToEntityFrameworkCore\obj\Debug\net6.0\Serilog.Sinks.WriteToEntityFrameworkCore.GeneratedMSBuildEditorConfig.editorconfig
+D:\Language\Csharp\Serilog.Sinks.WriteToEntityFrameworkCore\Serilog.Sinks.WriteToEntityFrameworkCore\obj\Debug\net6.0\Serilog.Sinks.WriteToEntityFrameworkCore.AssemblyInfoInputs.cache
+D:\Language\Csharp\Serilog.Sinks.WriteToEntityFrameworkCore\Serilog.Sinks.WriteToEntityFrameworkCore\obj\Debug\net6.0\Serilog.Sinks.WriteToEntityFrameworkCore.AssemblyInfo.cs
+D:\Language\Csharp\Serilog.Sinks.WriteToEntityFrameworkCore\Serilog.Sinks.WriteToEntityFrameworkCore\obj\Debug\net6.0\Serilog.Sinks.WriteToEntityFrameworkCore.csproj.CoreCompileInputs.cache
+D:\Language\Csharp\Serilog.Sinks.WriteToEntityFrameworkCore\Serilog.Sinks.WriteToEntityFrameworkCore\obj\Debug\net6.0\Serilog.Sinks.WriteToEntityFrameworkCore.dll
+D:\Language\Csharp\Serilog.Sinks.WriteToEntityFrameworkCore\Serilog.Sinks.WriteToEntityFrameworkCore\obj\Debug\net6.0\refint\Serilog.Sinks.WriteToEntityFrameworkCore.dll
+D:\Language\Csharp\Serilog.Sinks.WriteToEntityFrameworkCore\Serilog.Sinks.WriteToEntityFrameworkCore\obj\Debug\net6.0\Serilog.Sinks.WriteToEntityFrameworkCore.pdb
+D:\Language\Csharp\Serilog.Sinks.WriteToEntityFrameworkCore\Serilog.Sinks.WriteToEntityFrameworkCore\obj\Debug\net6.0\ref\Serilog.Sinks.WriteToEntityFrameworkCore.dll
